@@ -26,7 +26,7 @@ public class CodeTest {
                     i++;
                 }
             } else {
-                System.out.println("========= Multiples of A + 1 =========");
+                System.out.println("========= Multiples of A + 2 =========");
                 while (x < (3 * limit_x)) {
                     x = (a + 2) * i;
                     if (x <= (3 * limit_x))
