@@ -1,0 +1,108 @@
+AC 1 - Layout and design on the page will match the design above
+
+Observations:
+	
+	1) 	Actual - Page header is not bold.
+		Expected - 	Page header should be bold.
+	
+	2) 	Actual - Page header and the search fields is too close.
+		Expected - These should be more space between Page header and the search fields should be more.
+		
+	3) 	Actual - Search field names and releted edit box is too close.
+		Expected - These should be more space between Search field names and releted edit boxes.
+	
+	4) 	Actual - Search User/Create User buttons are too close to the user list table.
+		Expected - These should be more space between Search User/Create User buttons and the user list table.
+		
+	5) 	Actual - Page numbers links have a 'Next' link .
+		Expected - '>>' sign is expected instead of 'Next'
+	
+	6) 	Actual - Page footer is present.
+		Expected - Page footer should not be visible.
+	
+	7) 	Actual - Records in user list are editable.
+		Expected - Records should not be editable.
+	
+	8) 	Actual - Column sort arrow is visible.
+		Expected - Column sort arrow should not be visible.
+	
+	9) 	Actual - School/User Type and Year group are 'Select Options'
+		Expected - School/User Type and Year group should be 'Edit boxes'
+		
+AC 2 - 
+- Users will be able to filter on the following fields:
+    - First name
+    - Last name
+    - School
+    - User type
+    - Year group
+		
+Test Passed - Working as expected.
+Observation - 
+Filter is not case sensitive and is pattern filter.
+UI should have a clear filter option.	
+
+AC 3 - 
+- The following will be displayed in the results table:
+    - First name
+    - Last name
+    - School name
+    - Year group
+	
+Test Passed - Working as expected.
+
+AC 4 - 
+Clicking the edit button will navigate to the edit page
+
+Test Passed - Working as expected.
+Observation - 'Back' link in the Edit page always navigates back to first page of the user list.
+
+AC 5 - 
+- The following fields will be sortable
+    - First name - Sorting works as expected
+    - Last name - Sorting works as expected
+    - School name - Sorting is not done correctly
+    - Year group - Not able to sort
+	
+	Bugs -
+	1) School name - Sorting is not done correctly
+	
+	Actual - Sorting by School name is not working as expected
+	Expected - User should be able to sort by School name
+	
+	2) Year group - Not able to sort
+	Actual - Sort by Year group not working
+	Expected - User should be able to sort by Year group
+	
+AC 6 -
+- 5 records will be displayed per page
+
+Test Passed - Working as expected.
+
+AC 7 -
+- Clicking the “Search Users” button will search and display the results in the table based on the filters
+
+Test Passed - Working as expected.
+
+AC 8 - 
+- Clicking the “Create User” button will navigate to the “Create Users” page
+Test Passed - Working as expected.
+
+Bugs - On Exploratory Testing
+
+Filter fileds - 
+			1) There is no field length validation for first name and last name filter fields
+
+Create user page - 
+			1) There is no field length validation for first name and last name fields
+			2) There is validation on the allowed character in first name and last name fields
+			3) School is not saved when a new user is created
+			4) Navigated to - 'Error. An error occurred while processing your request.' when 'user type' is not selected
+			5) Navigated to - 'Error. An error occurred while processing your request.' when 'year' is not selected
+		
+Edit user page - 
+			1) School is not updated when editted for a new user or existing user
+			2) School for an existing user can not be edited. Navigated to - 'Error. An error occurred while processing your request.' (Intermitent issue)
+			3) There is no field length validation for first name and last name fields
+			4) There is validation on the allowed character in first name and last name fields
+			5) School should not be a multi-select option. 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/utpal/Documents/uk_workspace/sample_test">
+        <classes>
+            <class name="tests.CheckboxTests">
+                <!--<methods>
+                    <include name="test_checkBox"/>
+                    <include name="textSample"/>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
