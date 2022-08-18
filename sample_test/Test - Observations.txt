@@ -90,6 +90,8 @@ Test Passed - Working as expected.
 
 Bugs - On Exploratory Testing
 
+Welsh Link -
+			1) Welsh link not changing the language to Welsh
 Filter fileds - 
 			1) There is no field length validation for first name and last name filter fields
 
